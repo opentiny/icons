@@ -2,7 +2,6 @@
   "name": "@opentiny/icons",
   "type": "module",
   "version": "0.1.0",
-  "private": true,
   "description": "Opentiny Design Icons",
   "author": "",
   "packageManager": "pnpm@9.8.0",
