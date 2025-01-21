@@ -1,4 +1,4 @@
-name: Auto All Publish
+name: Auto Publish
 
 on:
   push:
