@@ -16,7 +16,7 @@
     "preset-icon"
   ],
   "files": [
-    "example/",
+    "categorys.ts",
     "svgs/",
     "json/",
     "style/",
@@ -26,7 +26,9 @@
     "dev": "vite",
     "build:example": "vite build",
     "build:icon": "tsx scripts/build.ts",
-    "test": "vitest"
+    "build": "pnpm run build:icon && pnpm run build:example",
+    "test": "vitest",
+    "pub": "pnpm publish --no-git-checks --access=public"
   },
   "devDependencies": {
     "@iconify/tools": "catalog:",
