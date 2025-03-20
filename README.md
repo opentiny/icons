@@ -8,7 +8,7 @@
 ## 安装 Installation
 
 ```
-npm install @opentiny/cloud-icons
+npm install @opentiny/icons
 
 ```
 
@@ -16,7 +16,7 @@ npm install @opentiny/cloud-icons
 
 1. 整体引入css使用:
 
-   在工程中的适应位置，引入图标的css文件： `import "@opentiny/cloud-icons/style/all.css"`, 也可以根据使用情况，按`类别`导入图标，以减小引入样式文件的体积.
+   在工程中的适应位置，引入图标的css文件： `import "@opentiny/icons/style/all.css"`, 也可以根据使用情况，按`类别`导入图标，以减小引入样式文件的体积.
 
 - 全量图标: all.css
 - 基础图标: base.css
@@ -42,7 +42,7 @@ export default defineConfig({
             'vertical-align': 'middle'
           },
           collections: {
-            ci: () => import('@opentiny/cloud-icons/json/icons.json').then((i) => i.default)
+            ci: () => import('@opentiny/icons/json/icons.json').then((i) => i.default)
           }
         })
       ]
