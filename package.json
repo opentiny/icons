@@ -28,7 +28,7 @@
     "test": "vitest",
     "pub": "pnpm publish --no-git-checks --access=public",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:build": "vitepress build docs --base /icons/ --outDir docs/.vitepress/icons ",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {

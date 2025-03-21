@@ -14,17 +14,17 @@ hero:
       link: /browser-icons
 
 features:
-  - title: 纯 CSS 图标
-    details: 跨框架适配，简单使用无障碍<br>性能极优越，秒杀组件型图标 
-  - title: 符合 @iconify 标准
-    details: 支持 <b>@iconify-json</b> 导出<br>轻松适配 <b>@unocss/preset-icons</b><br>按需引用
+  - title: 跨框架适配
+    details: 基于Anthony Fu的图标生成算法<br>支持 <br>性能极优越，可全面代替组件型图标 
+  - title: 简单使用无障碍
+    details: 支持 <b>CSS</b> 格式导出<br>支持 <b>@iconify-json</b> 格式导出<br>支持 <b>@unocss/preset-icons</b>，按需引用
   - title: 基础图标
-    details: 300+ 基础单色图标<br>大小&颜色随心变，满足日常开发
+    details: 300+ 基础单色图标<br>大小&颜色随心变<br>满足日常开发
   - title: 华为云服务图标
     details: 330+ 华为云服务图标<br>精致美观，风格统一
-  - title: 彩色图标
-    details: 330+ 华为云服务图标，精致美观
-  - title: 彩色图标
-    details: 330+ 华为云服务图标，精致美观
+  - title: 状态图标
+    details: 覆盖常见的空数据，请求状态，应用权限等场景
+  - title: 持续更新
+    details: 最新Opentiny Design团队的图标规范<br>
 ---
 
