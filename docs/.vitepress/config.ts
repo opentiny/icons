@@ -16,8 +16,9 @@ export default defineConfig({
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '图标介绍', link: '/introduce' },
+          { text: '快速上手', link: '/quick-start' },
+          { text: '浏览图标', link: '/browser-icons' }
         ]
       }
     ],

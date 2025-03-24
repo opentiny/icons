@@ -22,20 +22,18 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "vite",
-    "build:icon": "tsx scripts/build.ts",
-    "build": "pnpm run build:icon",
-    "test": "vitest",
+    "build": "tsx scripts/build.ts",
     "pub": "pnpm publish --no-git-checks --access=public",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs --base /icons/ --outDir docs/.vitepress/icons ",
-    "docs:preview": "vitepress preview docs"
+    "test": "vitest"
   },
   "devDependencies": {
     "@iconify/utils": "^2.1.32",
     "@iconify/tools": "^4.0.5",
     "@iconify/types": "^2.0.0",
     "@unocss/preset-icons": "latest",
+    "@vue/theme": "2.3.0",
     "chalk": "4.1.2",
     "fast-glob": "^3.3.2",
     "highlight.js": "^11.10.0",
