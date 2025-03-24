@@ -1,7 +1,7 @@
 <template>
   <div class="settings">
     <label> 选择图标集:</label>
-    <select id="sel-category" v-model="cat">
+    <select id="sel-category" v-model="cat" @change="catChanged">
       <option value="base">系统图标</option>
       <option value="svc">服务图标</option>
       <option value="ext">扩展图标</option>
@@ -21,10 +21,10 @@
       :key="groupName"
       class="icons-group"
     >
-      <h3 class="icon-title" title="图标数">
+      <h2 class="icon-title" title="图标数">
         <span>{{ groupName }}</span>
         <sup class="icon-counts">{{ groupIcons.length }}</sup>
-      </h3>
+      </h2>
       <div v-for="(icon, index) in groupIcons" :key="index" class="icon-item">
         <i :class="[cat, 'ci-' + icon.name]" :data-name="icon.name"></i>
         <div class="icon-title" :title="icon.nameCn">{{ icon.nameCn }}</div>
@@ -37,6 +37,8 @@
 <script setup>
 import { categorys } from "../categorys.ts";
 import { ref, computed } from "vue";
+
+const emit = defineEmits(["catChanged"]);
 
 const cat = ref("base");
 const color = ref("#575757");
@@ -76,6 +78,10 @@ const copyIcon=(ev)=>{
     navigator.clipboard.writeText(copyText)
   }
 }
+
+const catChanged = (ev) => {
+  emit("catChanged",displayGroups.value);
+};
 </script>
 
 <style scoped>

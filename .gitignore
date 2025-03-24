@@ -4,4 +4,3 @@
 node_modules
 dist/
 categorys.ts
-docs/.vitepress/icons
