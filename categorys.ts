@@ -799,258 +799,6 @@ export const categorys={
         "order": 9
       }
     ],
-    "3-文档_编辑器(Document & Editor)": [
-      {
-        "name": "folder-open1",
-        "nameCn": "展开文件夹",
-        "order": 1
-      },
-      {
-        "name": "view-detail",
-        "nameCn": "查看详情",
-        "order": 10
-      },
-      {
-        "name": "new-file",
-        "nameCn": "新建文件",
-        "order": 11
-      },
-      {
-        "name": "feedback",
-        "nameCn": "反馈",
-        "order": 12
-      },
-      {
-        "name": "docs",
-        "nameCn": "开发文档",
-        "order": 13
-      },
-      {
-        "name": "default-setting",
-        "nameCn": "默认配置",
-        "order": 13.1
-      },
-      {
-        "name": "task",
-        "nameCn": "任务",
-        "order": 14
-      },
-      {
-        "name": "log",
-        "nameCn": "日志",
-        "order": 15
-      },
-      {
-        "name": "domain-log",
-        "nameCn": "域名记录",
-        "order": 16
-      },
-      {
-        "name": "add-domain",
-        "nameCn": "添加域名解析",
-        "order": 17
-      },
-      {
-        "name": "domain-valid",
-        "nameCn": "域名生效验证",
-        "order": 18
-      },
-      {
-        "name": "synchronize",
-        "nameCn": "同步",
-        "order": 19
-      },
-      {
-        "name": "folder-add",
-        "nameCn": "新建文件夹",
-        "order": 2
-      },
-      {
-        "name": "blacklist",
-        "nameCn": "黑名单",
-        "order": 20
-      },
-      {
-        "name": "doc-search",
-        "nameCn": "文档搜索",
-        "order": 21
-      },
-      {
-        "name": "report",
-        "nameCn": "报表",
-        "order": 22
-      },
-      {
-        "name": "agency",
-        "nameCn": "委托",
-        "order": 23
-      },
-      {
-        "name": "folder-open",
-        "nameCn": "展开文件夹",
-        "order": 3
-      },
-      {
-        "name": "pic",
-        "nameCn": "图片",
-        "order": 30
-      },
-      {
-        "name": "graph",
-        "nameCn": "图形",
-        "order": 31
-      },
-      {
-        "name": "screenshot",
-        "nameCn": "截图",
-        "order": 32
-      },
-      {
-        "name": "image-upload",
-        "nameCn": "上传图片",
-        "order": 33
-      },
-      {
-        "name": "word",
-        "nameCn": "word文档",
-        "order": 34
-      },
-      {
-        "name": "doc",
-        "nameCn": "doc文档",
-        "order": 35
-      },
-      {
-        "name": "ppt",
-        "nameCn": "ppt文档",
-        "order": 36
-      },
-      {
-        "name": "xlsx",
-        "nameCn": "表格文档",
-        "order": 37
-      },
-      {
-        "name": "folder-history",
-        "nameCn": "历史文件夹",
-        "order": 4
-      },
-      {
-        "name": "save",
-        "nameCn": "存储",
-        "order": 40
-      },
-      {
-        "name": "new-window",
-        "nameCn": "新建窗口",
-        "order": 41
-      },
-      {
-        "name": "edit",
-        "nameCn": "编辑",
-        "order": 42
-      },
-      {
-        "name": "redo",
-        "nameCn": "恢复",
-        "order": 42.1
-      },
-      {
-        "name": "undo",
-        "nameCn": "回退",
-        "order": 42.2
-      },
-      {
-        "name": "align-left",
-        "nameCn": "左对齐",
-        "order": 43
-      },
-      {
-        "name": "align-center",
-        "nameCn": "居中对齐",
-        "order": 44
-      },
-      {
-        "name": "align-right",
-        "nameCn": "右对齐",
-        "order": 45
-      },
-      {
-        "name": "align-bottom",
-        "nameCn": "底部对齐",
-        "order": 46
-      },
-      {
-        "name": "align-top",
-        "nameCn": "顶部对齐",
-        "order": 47
-      },
-      {
-        "name": "align-middle",
-        "nameCn": "横中对齐",
-        "order": 48
-      },
-      {
-        "name": "x-arrange",
-        "nameCn": "横向排列",
-        "order": 49
-      },
-      {
-        "name": "folder",
-        "nameCn": "文件夹",
-        "order": 5
-      },
-      {
-        "name": "y-arrange",
-        "nameCn": "纵向排列",
-        "order": 50
-      },
-      {
-        "name": "table",
-        "nameCn": "表格",
-        "order": 51
-      },
-      {
-        "name": "grid-line",
-        "nameCn": "网格线",
-        "order": 52
-      },
-      {
-        "name": "grid-space",
-        "nameCn": "网格线间距",
-        "order": 53
-      },
-      {
-        "name": "no-checked",
-        "nameCn": "未选中",
-        "order": 54
-      },
-      {
-        "name": "half-checked",
-        "nameCn": "半选",
-        "order": 55
-      },
-      {
-        "name": "checked",
-        "nameCn": "选中",
-        "order": 56
-      },
-      {
-        "name": "radio",
-        "nameCn": "未单选中",
-        "order": 57
-      },
-      {
-        "name": "radio-checked",
-        "nameCn": "单选选中",
-        "order": 58
-      },
-      {
-        "name": "folder-download",
-        "nameCn": "文件夹下载",
-        "order": 6
-      }
-    ],
     "4-计算机_云(IT & Clouds)": [
       {
         "name": "pc",
@@ -1421,6 +1169,258 @@ export const categorys={
         "name": "domain",
         "nameCn": "公网域名",
         "order": 93
+      }
+    ],
+    "3-文档_编辑器(Document & Editor)": [
+      {
+        "name": "folder-open1",
+        "nameCn": "展开文件夹",
+        "order": 1
+      },
+      {
+        "name": "view-detail",
+        "nameCn": "查看详情",
+        "order": 10
+      },
+      {
+        "name": "new-file",
+        "nameCn": "新建文件",
+        "order": 11
+      },
+      {
+        "name": "feedback",
+        "nameCn": "反馈",
+        "order": 12
+      },
+      {
+        "name": "docs",
+        "nameCn": "开发文档",
+        "order": 13
+      },
+      {
+        "name": "default-setting",
+        "nameCn": "默认配置",
+        "order": 13.1
+      },
+      {
+        "name": "task",
+        "nameCn": "任务",
+        "order": 14
+      },
+      {
+        "name": "log",
+        "nameCn": "日志",
+        "order": 15
+      },
+      {
+        "name": "domain-log",
+        "nameCn": "域名记录",
+        "order": 16
+      },
+      {
+        "name": "add-domain",
+        "nameCn": "添加域名解析",
+        "order": 17
+      },
+      {
+        "name": "domain-valid",
+        "nameCn": "域名生效验证",
+        "order": 18
+      },
+      {
+        "name": "synchronize",
+        "nameCn": "同步",
+        "order": 19
+      },
+      {
+        "name": "folder-add",
+        "nameCn": "新建文件夹",
+        "order": 2
+      },
+      {
+        "name": "blacklist",
+        "nameCn": "黑名单",
+        "order": 20
+      },
+      {
+        "name": "doc-search",
+        "nameCn": "文档搜索",
+        "order": 21
+      },
+      {
+        "name": "report",
+        "nameCn": "报表",
+        "order": 22
+      },
+      {
+        "name": "agency",
+        "nameCn": "委托",
+        "order": 23
+      },
+      {
+        "name": "folder-open",
+        "nameCn": "展开文件夹",
+        "order": 3
+      },
+      {
+        "name": "pic",
+        "nameCn": "图片",
+        "order": 30
+      },
+      {
+        "name": "graph",
+        "nameCn": "图形",
+        "order": 31
+      },
+      {
+        "name": "screenshot",
+        "nameCn": "截图",
+        "order": 32
+      },
+      {
+        "name": "image-upload",
+        "nameCn": "上传图片",
+        "order": 33
+      },
+      {
+        "name": "word",
+        "nameCn": "word文档",
+        "order": 34
+      },
+      {
+        "name": "doc",
+        "nameCn": "doc文档",
+        "order": 35
+      },
+      {
+        "name": "ppt",
+        "nameCn": "ppt文档",
+        "order": 36
+      },
+      {
+        "name": "xlsx",
+        "nameCn": "表格文档",
+        "order": 37
+      },
+      {
+        "name": "folder-history",
+        "nameCn": "历史文件夹",
+        "order": 4
+      },
+      {
+        "name": "save",
+        "nameCn": "存储",
+        "order": 40
+      },
+      {
+        "name": "new-window",
+        "nameCn": "新建窗口",
+        "order": 41
+      },
+      {
+        "name": "edit",
+        "nameCn": "编辑",
+        "order": 42
+      },
+      {
+        "name": "redo",
+        "nameCn": "恢复",
+        "order": 42.1
+      },
+      {
+        "name": "undo",
+        "nameCn": "回退",
+        "order": 42.2
+      },
+      {
+        "name": "align-left",
+        "nameCn": "左对齐",
+        "order": 43
+      },
+      {
+        "name": "align-center",
+        "nameCn": "居中对齐",
+        "order": 44
+      },
+      {
+        "name": "align-right",
+        "nameCn": "右对齐",
+        "order": 45
+      },
+      {
+        "name": "align-bottom",
+        "nameCn": "底部对齐",
+        "order": 46
+      },
+      {
+        "name": "align-top",
+        "nameCn": "顶部对齐",
+        "order": 47
+      },
+      {
+        "name": "align-middle",
+        "nameCn": "横中对齐",
+        "order": 48
+      },
+      {
+        "name": "x-arrange",
+        "nameCn": "横向排列",
+        "order": 49
+      },
+      {
+        "name": "folder",
+        "nameCn": "文件夹",
+        "order": 5
+      },
+      {
+        "name": "y-arrange",
+        "nameCn": "纵向排列",
+        "order": 50
+      },
+      {
+        "name": "table",
+        "nameCn": "表格",
+        "order": 51
+      },
+      {
+        "name": "grid-line",
+        "nameCn": "网格线",
+        "order": 52
+      },
+      {
+        "name": "grid-space",
+        "nameCn": "网格线间距",
+        "order": 53
+      },
+      {
+        "name": "no-checked",
+        "nameCn": "未选中",
+        "order": 54
+      },
+      {
+        "name": "half-checked",
+        "nameCn": "半选",
+        "order": 55
+      },
+      {
+        "name": "checked",
+        "nameCn": "选中",
+        "order": 56
+      },
+      {
+        "name": "radio",
+        "nameCn": "未单选中",
+        "order": 57
+      },
+      {
+        "name": "radio-checked",
+        "nameCn": "单选选中",
+        "order": 58
+      },
+      {
+        "name": "folder-download",
+        "nameCn": "文件夹下载",
+        "order": 6
       }
     ],
     "5-用户_权限(User & Auth)": [
@@ -2695,8 +2695,8 @@ export const categorys={
         "order": 13
       },
       {
-        "name": "svc-大模型即服务平台-maas",
-        "nameCn": "modelarts子服务",
+        "name": "svc-maas",
+        "nameCn": "modelarts子服务_大模型即服务平台",
         "order": 14
       },
       {
@@ -2920,7 +2920,7 @@ export const categorys={
         "order": 6
       },
       {
-        "name": "svc-image tagging",
+        "name": "svc-image-tagging",
         "nameCn": "图像标签",
         "order": 7
       },
@@ -3133,7 +3133,7 @@ export const categorys={
         "order": 16
       },
       {
-        "name": "svc-codearts inspector",
+        "name": "svc-codearts-inspector",
         "nameCn": "漏洞管理服务",
         "order": 17
       },
@@ -3188,8 +3188,8 @@ export const categorys={
         "order": 8
       },
       {
-        "name": "svc-ddos流量清洗",
-        "nameCn": "anti",
+        "name": "svc-anti-ddos",
+        "nameCn": "antiddos流量清洗",
         "order": 9
       }
     ]

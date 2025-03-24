@@ -1,7 +1,7 @@
 {
   "name": "@opentiny/icons",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Opentiny Design Icons",
   "author": "",
   "packageManager": "pnpm@9.8.0",
@@ -22,26 +22,27 @@
     "README.md"
   ],
   "scripts": {
-    "dev": "vite",
-    "build:example": "vite build",
-    "build:icon": "tsx scripts/build.ts",
-    "build": "pnpm run build:icon && pnpm run build:example",
-    "test": "vitest",
-    "pub": "pnpm publish --no-git-checks --access=public"
+    "build": "tsx scripts/build.ts",
+    "pub": "pnpm publish --no-git-checks --access=public",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs --base /icons/ --outDir docs/.vitepress/icons ",
+    "test": "vitest"
   },
   "devDependencies": {
-    "@iconify/tools": "catalog:",
-    "@iconify/types": "catalog:",
-    "@iconify/utils": "catalog:",
-    "@unocss/preset-icons": "catalog:",
-    "chalk": "catalog:",
-    "fast-glob": "catalog:",
-    "highlight.js": "catalog:",
-    "lu2": "catalog:",
-    "tsx": "catalog:",
-    "typescript": "catalog:",
-    "unocss": "catalog:",
-    "vite": "catalog:",
-    "vitest": "catalog:"
+    "@iconify/utils": "^2.1.32",
+    "@iconify/tools": "^4.0.5",
+    "@iconify/types": "^2.0.0",
+    "@unocss/preset-icons": "latest",
+    "@vue/theme": "2.3.0",
+    "chalk": "4.1.2",
+    "fast-glob": "^3.3.2",
+    "highlight.js": "^11.10.0",
+    "lu2": "2024.9.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.5.3",
+    "unocss": "latest",
+    "vite": "^6.0.0",
+    "vitest": "^2.0.0",
+    "vitepress":"^1.6.3"
   }
 }
