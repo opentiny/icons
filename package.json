@@ -25,7 +25,7 @@
     "build": "tsx scripts/build.ts",
     "pub": "pnpm publish --no-git-checks --access=public",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs --base /icons/ --outDir vitepress-site ",
+    "docs:build": "vitepress build docs --base /icons/ --outDir icons ",
     "test": "vitest"
   },
   "devDependencies": {
