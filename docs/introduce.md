@@ -12,7 +12,7 @@
 
 在前端界的Anthony Fu大神在自己的博客[《聊聊纯 CSS 图标》](https://antfu.me/posts/icons-in-pure-css-zh)中提到：**在纯 CSS 中按需使用任何图标的能力**的一套方案，能支持单色和彩色图标，并且他将这个图标方案集成在了`UnoCSS`的[图标库预设](https://unocss.dev/presets/icons)中。在一次线下大会上，私下问Anthony Fu大神这个图标的问题，得到了`组件库不适合做图标`的意见，让我们更加坚定用`CSS`来做图标的想法。
 
-于是我们将`Opentiny Design`团队设计的`SVG`图标资源，使用Antfu的[图标算法](https://github.com/opentiny/icons/blob/7e1dde24f54c678dabc3eb4f3c837380a2a66a1c/scripts/build.ts#L81)转换为`CSS`图标。在我们的实际测试中，`CSS`图标的性能要强于直接渲染 `<svg>`标签。同时导出了`@iconify-json  格式`,支持`@unocss/preset-icons`的插件的使用。
+于是我们将`Opentiny Design`团队设计的`SVG`图标资源，使用Antfu的[图标算法](https://github.com/opentiny/icons/blob/7e1dde24f54c678dabc3eb4f3c837380a2a66a1c/scripts/build.ts#L81)转换为`CSS`图标。在我们的实际测试中，`CSS`图标的性能要强于直接渲染 `<svg>`标签, 更优于将图标封装的框架下组件。 
 
 ## 开源/贡献
 
