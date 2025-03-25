@@ -59,21 +59,23 @@ const clsPrefix = computed(() => {
 const displayGroups = computed(() => {
   const icons = categorys[cat.value];
 
-  Object.keys(icons)
+  const sortedGroups= Object.keys(icons)
     .sort((groupName1, groupName2) => {
       const num1 = parseInt(groupName1.split("-")[0]);
       const num2 = parseInt(groupName2.split("-")[0]);
       return num1 > num2 ? 1 : -1;
     })
-    .forEach((groupName) => {
+    .map((groupName) => {
       let groupIcons = icons[groupName];
       icons[groupName] = groupIcons.sort((g1, g2) =>
         g1.order > g2.order ? 1 : -1
       );
+      return [groupName,icons[groupName]]
     });
-
-  return icons;
+ 
+  return Object.fromEntries(sortedGroups);
 });
+
 
 const copyText=ref('')
 let rmTimer = 0; 

@@ -39,6 +39,7 @@ $ npm install @opentiny/icons
 ```css
 import "@opentiny/icons/style/all.css"
 ```
+
 图标类别：
 
 - 全量图标: all.css
@@ -49,11 +50,13 @@ import "@opentiny/icons/style/all.css"
 
 :::warning 提示
 
-所有图标类名的前缀统一为 `ci-类别-*`,  其中`base类别`的图标最为常用，所以省略了类别，其它类别的图标必须带着类别。
-比如： 
-- ci-home <i class="ci-home"></i> ci-email <i class="ci-email"></i> 是 `base` 类别的图标。   
+所有图标类名的前缀统一为 `ci-类别-*`, 其中`base类别`的图标最为常用，所以省略了类别，其它类别的图标必须带着类别。
+比如：
+
+- ci-home <i class="ci-home"></i> ci-email <i class="ci-email"></i> 是 `base` 类别的图标。
 - ci-svc-esc <i class="ci-svc-ecs"></i> 是服务图标， `svc`的类别不能省略。
-:::
+- ci-ext-ideahub <i class="ci-ext-ideahub"></i> 是扩展服务图标，`ext`的类别不能省略。
+  :::
 
 ## 按需引用 (推荐)
 
@@ -88,3 +91,35 @@ export default defineConfig({
 
 修改`collections`中的键值，可以迅速调整图标前缀，避免与其它图标库冲突！
 :::
+
+## 自定义颜色和大小
+
+单色的`CSS`图标支持通过字体和颜色去自定义图标样式。彩色图标仅支持自定义大小。
+
+```html
+<i class="ci-home" style="font-size:14px; color:#000;"></i>
+<i class="ci-email" style="font-size:16px; color:#d32222;"></i>
+<i class="ci-news" style="font-size:18x; color:#4822d3;"></i>
+<i class="ci-date" style="font-size:20px; color:#40d322;"></i>
+<hr />
+<i class="ci-svc-ecs" style="font-size:72px;"></i>
+<i class="ci-svc-obs" style="font-size:72px;"></i>
+<i class="ci-svc-cbr" style="font-size:72px;"></i>
+<i class="ci-svc-live" style="font-size:72px;"></i>
+<hr />
+```
+
+<div style="display:flex; align-items: center; gap: 24px;">
+  <i class="ci-home" style="font-size:14px; color:#000;"></i>   
+  <i class="ci-email" style="font-size:20px; color:#d32222;"></i>   
+  <i class="ci-news" style="font-size:24px; color:#4822d3;"></i>   
+  <i class="ci-date" style="font-size:32px; color:#40d322;"></i>  
+</div>
+<hr />
+<div style="display:flex; align-items: center; gap: 24px;">
+  <i class="ci-svc-ecs" style="font-size:72px;"></i>
+  <i class="ci-svc-obs" style="font-size:72px;"></i>
+  <i class="ci-svc-cbr" style="font-size:72px;"></i>
+  <i class="ci-svc-live" style="font-size:72px;"></i>
+</div>
+<hr />
