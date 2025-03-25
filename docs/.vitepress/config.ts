@@ -25,6 +25,9 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/opentiny/icons' },
-    ]
+    ],
+    outline:{
+      label: '目录',
+    }
   }
 })

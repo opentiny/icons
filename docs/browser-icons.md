@@ -3,15 +3,16 @@ outline: deep
 ---
 
 <script setup>
-import { useData } from 'vitepress'
+import { useData , useRoute,contentUpdatedCallbacks } from 'vitepress'
+import {ref} from "vue"
 import BrowserIconsVue from "./browser-icons.vue"
-const { site, theme, page, frontmatter } = useData()
 
-frontmatter.outline={label:'页面导航'}
+const { site, theme, page, frontmatter } = useData()
+const route= useRoute()
 const catChanged=(val)=>{
-    console.log(val,'changed.....',frontmatter)
+ contentUpdatedCallbacks.forEach(f=>f())
 }
 
 </script>
- 
+
  <BrowserIconsVue @catChanged="catChanged" />

@@ -15,7 +15,11 @@
       <option value="only-name">图标类名</option>
     </select>
   </div>
-  <div id="list" :style="{ '--icon-color': `${color}` }" @click="copyIcon($event)">
+  <div
+    id="list"
+    :style="{ '--icon-color': `${color}` }"
+    @click="copyIcon($event)"
+  >
     <div
       v-for="(groupIcons, groupName) in displayGroups"
       :key="groupName"
@@ -36,7 +40,7 @@
 
 <script setup>
 import { categorys } from "../categorys.ts";
-import { ref, computed } from "vue";
+import { ref, computed, nextTick } from "vue";
 
 const emit = defineEmits(["catChanged"]);
 
@@ -63,24 +67,26 @@ const displayGroups = computed(() => {
         g1.order > g2.order ? 1 : -1
       );
     });
-  console.log("icons", icons);
+
   return icons;
 });
 
-const copyIcon=(ev)=>{
-  const target = ev.target 
-  const name = target.dataset.name
+const copyIcon = (ev) => {
+  const target = ev.target;
+  const name = target.dataset.name;
   if (name) {
-    const cls = 'ci-' + name
-    const tag = `<i class="${cls}"></i>`
-    const copyText = copyType.value === 'all' ? tag : cls
+    const cls = "ci-" + name;
+    const tag = `<i class="${cls}"></i>`;
+    const copyText = copyType.value === "all" ? tag : cls;
 
-    navigator.clipboard.writeText(copyText)
+    navigator.clipboard.writeText(copyText);
   }
-}
+};
 
 const catChanged = (ev) => {
-  emit("catChanged",displayGroups.value);
+  nextTick(() => {
+    emit("catChanged", displayGroups.value);
+  });
 };
 </script>
 
@@ -161,5 +167,4 @@ input {
 #list .stat ~ div {
   width: 120px;
 }
-
 </style>
