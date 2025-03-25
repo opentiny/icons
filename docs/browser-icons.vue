@@ -25,7 +25,7 @@
       :key="groupName"
       class="icons-group"
     >
-      <h2 class="icon-title" title="图标数">
+      <h2 class="icons-group-title" title="图标数">
         <span>{{ groupName }}</span>
         <sup class="icon-counts">{{ groupIcons.length }}</sup>
       </h2>
@@ -36,6 +36,10 @@
       </div>
     </div>
   </div>
+
+  <div class="tip">
+    {{ copyText + ' 复制成功' }}
+  </div>  
 </template>
 
 <script setup>
@@ -71,15 +75,26 @@ const displayGroups = computed(() => {
   return icons;
 });
 
+const copyText=ref('')
+let rmTimer = 0; 
+
 const copyIcon = (ev) => {
   const target = ev.target;
   const name = target.dataset.name;
   if (name) {
     const cls = "ci-" + name;
     const tag = `<i class="${cls}"></i>`;
-    const copyText = copyType.value === "all" ? tag : cls;
+    copyText.value = copyType.value === "all" ? tag : cls;
+    
+    const tip = document.querySelector(".tip");
+    tip.classList.add("active");  
+    
+    rmTimer && clearTimeout(rmTimer);
+    rmTimer = setTimeout(() => {
+      tip.classList.remove("active");
+    }, 3000);
 
-    navigator.clipboard.writeText(copyText);
+    navigator.clipboard.writeText(copyText.value);
   }
 };
 
@@ -88,6 +103,8 @@ const catChanged = (ev) => {
     emit("catChanged", displayGroups.value);
   });
 };
+
+
 </script>
 
 <style scoped>
@@ -166,5 +183,22 @@ input {
 #list .ext ~ div,
 #list .stat ~ div {
   width: 120px;
+}
+
+/** 提示信息 */
+.tip {
+  position: fixed;
+  top: 80px;
+  left: 80%;
+  transform: translateX(-50%);
+  background-color: #c8f3ce;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  display: none;
+}
+.tip.active {
+  display: block;
 }
 </style>

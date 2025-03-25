@@ -1,5 +1,5 @@
 ---
-outline: deep
+aside: false
 ---
 
 <script setup>
@@ -9,10 +9,11 @@ import BrowserIconsVue from "./browser-icons.vue"
 
 // const { site, theme, page, frontmatter } = useData()
 // const route= useRoute()
-const catChanged=(val)=>{
+// const catChanged=(val)=>{
 //  contentUpdatedCallbacks.forEach(f=>f())
-}
+// }
 
 </script>
 
- <BrowserIconsVue @catChanged="catChanged" />
+ <!-- <BrowserIconsVue @catChanged="catChanged" /> -->
+ <BrowserIconsVue  />
