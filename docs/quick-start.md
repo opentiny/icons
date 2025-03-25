@@ -14,10 +14,10 @@ import {VTCodeGroup,VTCodeGroupTab} from "@vue/theme"
 $ npm install @opentiny/icons
 ```
 
-安装后，在`node_modules/@opentiny/icons` 目录中，可以观察到以下内容
+安装后，在`node_modules/@opentiny/icons` 目录中，可以观察到以下内容:
 
 ```
-icons/
+./
 |─json
 |  └─ icons.json
 |─style
@@ -26,26 +26,30 @@ icons/
 |  |─ svc.css
 |  |─ ext.css
 |  └─ stat.css
+|-svgs
+|  └─ *.svg
+|-README.md
 
 ```
 
 ## 整体引入 css 使用
 
-在工程中的适应位置，引入图标的 css 文件, 也可以根据使用情况，按`类别`导入图标，以减小引入样式文件的体积.
+在项目工程中，直接引入`@opentiny/icons`图标的 css 文件, 也可以根据使用情况，按`图标类别`导入图标，以减小引入样式文件的体积。
 
 ```css
 import "@opentiny/icons/style/all.css"
 ```
+图标类别：
 
 - 全量图标: all.css
 - 基础图标: base.css
 - 服务图标: svc.css
 - 服务扩展图标: ext.css
-- 服务扩展图标: stat.css
+- 状态图标: stat.css
 
 :::warning 提示
 
-所有图标类名的前缀统一为 `ci-类别-*`,  其中`base类别`的图标常用，所以省略了类别，其它类别的图标必须带着类别。
+所有图标类名的前缀统一为 `ci-类别-*`,  其中`base类别`的图标最为常用，所以省略了类别，其它类别的图标必须带着类别。
 比如： 
 - ci-home <i class="ci-home"></i> ci-email <i class="ci-email"></i> 是 `base` 类别的图标。   
 - ci-svc-esc <i class="ci-svc-ecs"></i> 是服务图标， `svc`的类别不能省略。
