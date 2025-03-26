@@ -4,7 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: " ",
   description: "A Cross-framework Icons Library",
+  base: '/icons/',
   themeConfig: {
+     logo: '/logo.svg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },

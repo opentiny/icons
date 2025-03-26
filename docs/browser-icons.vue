@@ -25,9 +25,9 @@
       :key="groupName"
       class="icons-group"
     >
-      <h2 class="icons-group-title" title="图标数">
+      <h2 :id="groupName" class="icons-group-title"  title="图标数">
         <span>{{ groupName }}</span>
-        <sup class="icon-counts">{{ groupIcons.length }}</sup>
+        <sup class="icon-counts ignore-header"> {{ groupIcons.length }}</sup>
       </h2>
       <div v-for="(icon, index) in groupIcons" :key="index" class="icon-item">
         <i :class="[cat, 'ci-' + icon.name]" :data-name="icon.name"></i>

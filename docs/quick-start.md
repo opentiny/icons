@@ -78,7 +78,7 @@ export default defineConfig({
             'vertical-align': 'middle'
           },
           collections: {
-            ci: () => import('@opentiny/icons/json/icons.json').then((i) => i.default)
+            ci: () => import('@opentiny/icons/json/icons.json', { assert: { type: 'json' }}).then((i) => i.default)
           }
         })
       ]
@@ -123,3 +123,11 @@ export default defineConfig({
   <i class="ci-svc-live" style="font-size:72px;"></i>
 </div>
 <hr />
+
+## 使用 Svg 资源
+
+图标库还提供了原始的`SVG图标资源`，用户可以直接使用它们。可能有以下的使用场景：
+
+1. 在前端应用项目中直接引用 SVG 为组件。通常需要借助 Svg-Loader 等工具，比如：Vue用户使用`vite-svg-loader`，React用户使用`vite-plugin-svgr`插件工具。
+2. 引用原始 SVG 内容，然后直接渲染到页面上。 
+3. 在`Node`环境中读取文件内容，对文件进行处理后使用。 比如：调用`svgo`进行处理，生成字体文件或svg精灵图等。

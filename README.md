@@ -8,53 +8,7 @@
 npm install @opentiny/icons
 
 ```
-
-## 如何使用 Usage
-
-1. 整体引入css使用:
-
-   在工程中的适应位置，引入图标的css文件： `import "@opentiny/icons/style/all.css"`, 也可以根据使用情况，按`类别`导入图标，以减小引入样式文件的体积.
-
-- 全量图标: all.css
-- 基础图标: base.css
-- 服务图标: svc.css
-- 服务扩展图标: ext.css
-- 服务扩展图标: stat.css
-
-2. 引入 @unocss/preset-icons 插件使用
-
-```javascript
-import { defineConfig } from 'vite'
-import UnoCSS from 'unocss/vite'
-import presetIcons from '@unocss/preset-icons'
-
-export default defineConfig({
-  plugins: [
-    UnoCSS({
-      presets: [
-        presetIcons({
-          prefix: '',
-          extraProperties: {
-            display: 'inline-block',
-            'vertical-align': 'middle'
-          },
-          collections: {
-            ci: () => import('@opentiny/icons/json/icons.json').then((i) => i.default)
-          }
-        })
-      ]
-    })
-  ]
-})
-```
-
-3. 使用图标
-   无论通过哪个方式引入，此时都可以通过图标类名引用所需图标：`<i class="ci-search"></i>` 。通过标签的`font-size`属性，去修改图标的大小，对于单色图标，通过`color`修改图标的颜色。
-
-4. 借助`Iconify` 提供的组件
-  `Iconify`生态系统有一个组件系统，它提供一个图标组件以支持图标的加载，参考[Iconify/Icons on Demand](https://iconify.design/docs/icon-components)  
-
-## 浏览所有图标 Browser Icons
+## 浏览图标 Browser Icons
 
 [在线预览](https://opentiny.github.io/icons)
 
