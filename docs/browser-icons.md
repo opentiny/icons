@@ -1,13 +1,13 @@
 <script setup>
 import { useData , useRoute,contentUpdatedCallbacks } from 'vitepress'
-import { ref, nextTick } from "vue"
+import { ref, onMounted } from "vue"
 import BrowserIconsVue from "./browser-icons.vue"
 
 const catChanged=(val)=>{
  contentUpdatedCallbacks.forEach(fn=>fn())
 }
 
-nextTick(()=>{
+onMounted(()=>{
     contentUpdatedCallbacks.forEach(fn=>fn())
 })
 </script>
