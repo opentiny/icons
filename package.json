@@ -22,9 +22,9 @@
     "README.md"
   ],
   "scripts": {
+    "dev": "vitepress dev docs",
     "build": "tsx scripts/build.ts",
     "pub": "pnpm publish --no-git-checks --access=public",
-    "docs:dev": "vitepress dev docs",
     "docs:build": "pnpm build && vitepress build docs --base /icons/",
     "test": "vitest"
   },
