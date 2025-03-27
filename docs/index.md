@@ -15,7 +15,7 @@ hero:
 
 features:
   - title: 跨框架适配
-    details: 基于Anthony Fu的图标生成算法<br>支持 <br>性能极优越，可全面代替组件型图标 
+    details: 支持Vue\React等前端框架<br>性能极优越，可全面代替组件型图标 
   - title: 简单使用无障碍
     details: 支持 <b>CSS</b> 格式导出<br>支持 <b>@iconify-json</b> 格式导出<br>支持 <b>@unocss/preset-icons</b>，按需引用
   - title: 基础图标

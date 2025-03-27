@@ -137,3 +137,13 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+
+:root{
+  --vp-layout-max-width: 1680px;
+}
+
+/** 图标内容区更大 */
+.content-container {
+  max-width: 100%!important;
+ 
+}

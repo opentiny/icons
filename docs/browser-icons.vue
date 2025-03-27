@@ -1,9 +1,11 @@
 <template>
   <div class="settings">
-    <label> 图标颜色:</label>
-    <input id="sel-color" type="color" v-model="color" />
+    <template v-if="cat === 'base'">
+      <label> 图标颜色:</label>
+      <input type="color"  is="ui-color" v-model="color" />
+    </template>
     <label> 复制方式:</label>
-    <select id="sel-copy" v-model="copyType">
+    <select v-model="copyType">
       <option value="all">完整标签</option>
       <option value="only-name">图标类名</option>
     </select>
@@ -18,7 +20,7 @@
       :key="groupName"
       class="icons-group"
     >
-      <h2 :id="groupName" class="icons-group-title"  title="图标数">
+      <h2 :id="groupName" class="icons-group-title" title="图标数">
         <span>{{ groupName }}</span>
         <sup class="icon-counts ignore-header"> {{ groupIcons.length }}</sup>
       </h2>
@@ -31,17 +33,16 @@
   </div>
 
   <div class="tip">
-    {{ copyText + ' 复制成功' }}
-  </div>  
+    {{ copyText + " 复制成功" }}
+  </div>
 </template>
 
 <script setup>
 import { categorys } from "../categorys.ts";
 import { ref, computed, nextTick } from "vue";
 
-const props = defineProps(['cat']);
+const props = defineProps(["cat"]);
 
- 
 const color = ref("#575757");
 const copyType = ref("all");
 
@@ -52,7 +53,7 @@ const clsPrefix = computed(() => {
 const displayGroups = computed(() => {
   const icons = categorys[props.cat];
 
-  const sortedGroups= Object.keys(icons)
+  const sortedGroups = Object.keys(icons)
     .sort((groupName1, groupName2) => {
       const num1 = parseInt(groupName1.split("-")[0]);
       const num2 = parseInt(groupName2.split("-")[0]);
@@ -63,15 +64,14 @@ const displayGroups = computed(() => {
       icons[groupName] = groupIcons.sort((g1, g2) =>
         g1.order > g2.order ? 1 : -1
       );
-      return [groupName,icons[groupName]]
+      return [groupName, icons[groupName]];
     });
- 
+
   return Object.fromEntries(sortedGroups);
 });
 
-
-const copyText=ref('')
-let rmTimer = 0; 
+const copyText = ref("");
+let rmTimer = 0;
 
 const copyIcon = (ev) => {
   const target = ev.target;
@@ -80,10 +80,10 @@ const copyIcon = (ev) => {
     const cls = "ci-" + name;
     const tag = `<i class="${cls}"></i>`;
     copyText.value = copyType.value === "all" ? tag : cls;
-    
+
     const tip = document.querySelector(".tip");
-    tip.classList.add("active");  
-    
+    tip.classList.add("active");
+
     rmTimer && clearTimeout(rmTimer);
     rmTimer = setTimeout(() => {
       tip.classList.remove("active");
@@ -92,7 +92,6 @@ const copyIcon = (ev) => {
     navigator.clipboard.writeText(copyText.value);
   }
 };
-
 </script>
 
 <style scoped>
@@ -106,12 +105,12 @@ input {
 .settings {
   width: 300px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .settings *:not(label) {
   font-weight: bold;
+  margin-right: 12px;
 }
 
 /** 组别样式 */
@@ -134,7 +133,7 @@ input {
   color: #575d6c;
 }
 #list i {
-  margin: 20px;
+  margin: 17px;
   transition: all 0.5s;
   color: var(--icon-color);
 }
@@ -149,6 +148,7 @@ input {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 1.4;
 }
 
 /** 图标尺寸的定制 */

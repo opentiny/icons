@@ -22,7 +22,6 @@ export default defineConfig({
         ],
       },
     ],
-
     sidebar: [
       {
         text: "Examples",
@@ -48,5 +47,8 @@ export default defineConfig({
     outline: {
       label: "目录",
     },
+    footer: {
+      copyright: "Copyright © 2025-present OpenTiny",
+    }
   },
 });
