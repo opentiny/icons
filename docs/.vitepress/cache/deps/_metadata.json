@@ -2,12 +2,12 @@
   "hash": "ecc6cb92",
   "configHash": "a88e224c",
   "lockfileHash": "75178cf8",
-  "browserHash": "010ee894",
+  "browserHash": "385a5f8a",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.5.13_typescript@5.8.2/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "1021b3b0",
+      "fileHash": "74626cf2",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
@@ -19,13 +19,13 @@
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/.pnpm/@vueuse+core@12.8.2_typescript@5.8.2/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "935a4181",
+      "fileHash": "bb87be06",
       "needsInterop": false
     },
     "@vue/theme": {
       "src": "../../../../node_modules/.pnpm/@vue+theme@2.3.0_@algolia+client-search@5.21.0_search-insights@2.17.3_vitepress@1.6.3_patch_h_ck6osi33iswadkjxmtnnu7ufeu/node_modules/@vue/theme/src/index.ts",
       "file": "@vue_theme.js",
-      "fileHash": "0d8526f0",
+      "fileHash": "a281ae85",
       "needsInterop": false
     },
     "lu2/theme/edge/js/common/ui/Color.js": {
@@ -33,6 +33,12 @@
       "file": "lu2_theme_edge_js_common_ui_Color__js.js",
       "fileHash": "8a064c74",
       "needsInterop": false
+    },
+    "lu2/theme/edge/js/common/ui/Select.js": {
+      "src": "../../../../node_modules/.pnpm/lu2@2024.9.2/node_modules/lu2/theme/edge/js/common/ui/Select.js",
+      "file": "lu2_theme_edge_js_common_ui_Select__js.js",
+      "fileHash": "862a0d17",
+      "needsInterop": true
     }
   },
   "chunks": {

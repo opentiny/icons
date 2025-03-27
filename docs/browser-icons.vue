@@ -2,10 +2,10 @@
   <div class="settings">
     <template v-if="cat === 'base'">
       <label> 图标颜色:</label>
-      <input type="color"  is="ui-color" v-model="color" />
+      <input type="color" is="ui-color" v-model="color" class="item" />
     </template>
     <label> 复制方式:</label>
-    <select v-model="copyType">
+    <select v-model="copyType" is="ui-select" class="item">
       <option value="all">完整标签</option>
       <option value="only-name">图标类名</option>
     </select>
@@ -94,7 +94,7 @@ const copyIcon = (ev) => {
 };
 </script>
 
-<style scoped>
+<style>
 /** 控制区 */
 select,
 input {
@@ -103,14 +103,17 @@ input {
   font-size: 16px;
 }
 .settings {
-  width: 300px;
   display: flex;
   align-items: center;
 }
 
-.settings *:not(label) {
-  font-weight: bold;
+.settings .item {
+  margin-left: 8px;
   margin-right: 12px;
+}
+
+.settings .item a {
+ text-decoration: none;
 }
 
 /** 组别样式 */
@@ -176,7 +179,7 @@ input {
 /** 提示信息 */
 .tip {
   position: fixed;
-  top: 80px;
+  top: 120px;
   left: 60%;
   transform: translateX(-50%);
   background-color: #c8f3ce;

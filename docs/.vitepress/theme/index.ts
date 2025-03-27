@@ -6,6 +6,8 @@ import './style.css'
 import '../../../style/all.css' // 引入全是的图标类名
 import "lu2/theme/edge/css/common/ui/Color.css"
 import "lu2/theme/edge/js/common/ui/Color.js"
+import "lu2/theme/edge/css/common/ui/Select.css"
+import "lu2/theme/edge/js/common/ui/Select.js"
  
 export default {
   extends: DefaultTheme,
