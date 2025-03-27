@@ -12,4 +12,4 @@ onMounted(()=>{
 })
 </script>
 
-<BrowserIconsVue @catChanged="catChanged" />
+<BrowserIconsVue cat='base' />

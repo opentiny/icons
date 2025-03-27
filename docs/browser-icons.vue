@@ -1,12 +1,5 @@
 <template>
   <div class="settings">
-    <label> 选择图标集:</label>
-    <select id="sel-category" v-model="cat" @change="catChanged">
-      <option value="base">系统图标</option>
-      <option value="svc">服务图标</option>
-      <option value="ext">扩展图标</option>
-      <option value="stat">状态图标</option>
-    </select>
     <label> 图标颜色:</label>
     <input id="sel-color" type="color" v-model="color" />
     <label> 复制方式:</label>
@@ -46,18 +39,18 @@
 import { categorys } from "../categorys.ts";
 import { ref, computed, nextTick } from "vue";
 
-const emit = defineEmits(["catChanged"]);
+const props = defineProps(['cat']);
 
-const cat = ref("base");
+ 
 const color = ref("#575757");
 const copyType = ref("all");
 
 const clsPrefix = computed(() => {
-  return cat.value === "base" ? "ci-" : "ci-" + cat.value + "-";
+  return props.cat === "base" ? "ci-" : "ci-" + props.cat + "-";
 });
 
 const displayGroups = computed(() => {
-  const icons = categorys[cat.value];
+  const icons = categorys[props.cat];
 
   const sortedGroups= Object.keys(icons)
     .sort((groupName1, groupName2) => {
@@ -100,13 +93,6 @@ const copyIcon = (ev) => {
   }
 };
 
-const catChanged = (ev) => {
-  nextTick(() => {
-    emit("catChanged", displayGroups.value);
-  });
-};
-
-
 </script>
 
 <style scoped>
@@ -118,7 +104,7 @@ input {
   font-size: 16px;
 }
 .settings {
-  width: 520px;
+  width: 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -191,7 +177,7 @@ input {
 .tip {
   position: fixed;
   top: 80px;
-  left: 80%;
+  left: 60%;
   transform: translateX(-50%);
   background-color: #c8f3ce;
   padding: 8px;

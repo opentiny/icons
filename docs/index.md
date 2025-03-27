@@ -11,7 +11,7 @@ hero:
       link: /quick-start
     - theme: alt
       text: 浏览图标
-      link: /browser-icons
+      link: /browser-icons-base
 
 features:
   - title: 跨框架适配

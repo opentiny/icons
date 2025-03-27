@@ -1,7 +1,3 @@
-<script setup>
-import {VTCodeGroup,VTCodeGroupTab} from "@vue/theme"
-</script>
-
 # 快速上手
 
 `OpenTiny Icons`图标库是`CSS`图标方案，所以支持所有前端框架，也支持`UnoCSS`的图标插件使用场景。
@@ -60,7 +56,7 @@ import "@opentiny/icons/style/all.css"
 
 ## 按需引用 (推荐)
 
-通过引入 `@unocss/preset-icons` 插件，可以实现按需引用图标，大大减小构建后的文件大小。
+通过引入 `@unocss/preset-icons` 插件，可以实现按需引用图标，减小构建产物大小，并且可以调整图标前缀，避免与其它图标库冲突。
 
 ```javascript{16}
 import { defineConfig } from 'vite'
@@ -86,11 +82,6 @@ export default defineConfig({
   ]
 })
 ```
-
-:::tip 实用技巧
-
-修改`collections`中的键值，可以迅速调整图标前缀，避免与其它图标库冲突！
-:::
 
 ## 自定义颜色和大小
 
