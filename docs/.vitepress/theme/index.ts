@@ -17,11 +17,10 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
-    setTimeout(() => {
-      // 这里是延时加载的代码, 防止 lulu 不支持ssr 报错
+    // 防止 lulu 不支持ssr 报错
+    if (!import.meta.env.SSR) {
       import(`lu2/theme/edge/js/common/ui/Color.js`)
       import(`lu2/theme/edge/js/common/ui/Select.js`)
-    }, 20);
-    // ...
+    }
   }
 } satisfies Theme
