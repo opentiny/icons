@@ -5,9 +5,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import '../../../style/all.css' // 引入全是的图标类名
 import "lu2/theme/edge/css/common/ui/Color.css"
-import "lu2/theme/edge/js/common/ui/Color.js"
 import "lu2/theme/edge/css/common/ui/Select.css"
-import "lu2/theme/edge/js/common/ui/Select.js"
  
 export default {
   extends: DefaultTheme,
@@ -17,6 +15,11 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
+    setTimeout(() => {
+      // 这里是延时加载的代码, 防止 lulu 不支持ssr 报错
+      import(`lu2/theme/edge/js/common/ui/Color.js`)
+      import(`lu2/theme/edge/js/common/ui/Select.js`)
+    }, 20);
     // ...
   }
 } satisfies Theme
