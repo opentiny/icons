@@ -147,3 +147,20 @@
   max-width: 100%!important;
  
 }
+
+/** lulu 的暗色适配 */
+:root.dark {
+  --ui-light: #151515;
+  --ui-white: #1b1b1f;
+  --ui-list-selected: #1f272e;
+  --ui-list-hover: #1f272e;
+  --ui-border: #363636;
+  --ui-dark-border: #505050;
+}
+
+.ui-select-datalist .ui-select-datalist-li  {
+ color: var(--ui-dark);
+}
+.ui-select-datalist.ui-select-datalist .ui-select-datalist-li:hover  {
+  color:#455382;
+ }
