@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: " ",
+  title: "Opentiny Design",
   description: "A Cross-framework Icons Library",
   base: "/icons/",
   cleanUrls: true,
