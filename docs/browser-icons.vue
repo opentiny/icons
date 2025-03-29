@@ -1,14 +1,24 @@
 <template>
   <div class="settings">
-    <template v-if="cat === 'base'">
-      <label> 图标颜色:</label>
-      <input type="color" is="ui-color" v-model="color" class="item" />
-    </template>
-    <label> 复制方式:</label>
-    <select v-model="copyType" is="ui-select" class="item">
-      <option value="all">完整标签</option>
-      <option value="only-name">图标类名</option>
-    </select>
+    <div>
+      <template v-if="cat === 'base'">
+        <label> 图标颜色:</label>
+        <input type="color" is="ui-color" v-model="color" class="item" />
+      </template>
+      <label> 复制方式:</label>
+      <select v-model="copyType" is="ui-select" class="item">
+        <option value="all">完整标签</option>
+        <option value="only-name">图标类名</option>
+      </select>
+    </div>
+    <div>
+      <input
+        v-model="filterStr"
+        type="text"
+        is="ui-input"
+        placeholder="搜索图标"
+      />
+    </div>
   </div>
   <div
     id="list"
@@ -20,7 +30,7 @@
       :key="groupName"
       class="icons-group"
     >
-      <h2 :id="groupName" class="icons-group-title" title="图标数">
+      <h2 :id="groupName" v-show="groupIcons.length>0" class="icons-group-title" title="图标数">
         <span>{{ groupName }}</span>
         <sup class="icon-counts ignore-header"> {{ groupIcons.length }}</sup>
       </h2>
@@ -45,6 +55,7 @@ const props = defineProps(["cat"]);
 
 const color = ref("#575757");
 const copyType = ref("all");
+const filterStr = ref("");
 
 const clsPrefix = computed(() => {
   return props.cat === "base" ? "ci-" : "ci-" + props.cat + "-";
@@ -61,10 +72,19 @@ const displayGroups = computed(() => {
     })
     .map((groupName) => {
       let groupIcons = icons[groupName];
-      icons[groupName] = groupIcons.sort((g1, g2) =>
-        g1.order > g2.order ? 1 : -1
-      );
-      return [groupName, icons[groupName]];
+      // 过滤图标
+      if (filterStr.value) {
+        groupIcons = groupIcons.filter((icon) => {
+          return (
+            icon.name.includes(filterStr.value) ||
+            icon.nameCn.includes(filterStr.value)
+          );
+        });
+      }
+      // 过滤后排序
+      groupIcons.sort((g1, g2) => (g1.order > g2.order ? 1 : -1));
+
+      return [groupName, groupIcons];
     });
 
   return Object.fromEntries(sortedGroups);
@@ -92,6 +112,7 @@ const copyIcon = (ev) => {
     navigator.clipboard.writeText(copyText.value);
   }
 };
+
 </script>
 
 <style>
@@ -105,6 +126,7 @@ input {
 .settings {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .settings .item {
@@ -113,7 +135,7 @@ input {
 }
 
 .settings .item a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 /** 组别样式 */
