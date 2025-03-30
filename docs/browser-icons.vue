@@ -214,4 +214,8 @@ input {
 .tip.active {
   display: block;
 }
+.dark .tip{
+  background-color: #2a362e;
+  color:#98989f;
+}
 </style>
