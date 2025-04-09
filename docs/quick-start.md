@@ -46,7 +46,7 @@ import "@opentiny/icons/style/all.css"
 
 :::warning 提示
 
-所有图标类名的前缀统一为 `ci-类别-*`, 其中`base类别`的图标最为常用，所以省略了类别，其它类别的图标必须带着类别。
+引入`CSS`的时候，所有图标类名的前缀统一为 `ci-类别-*`, 其中`base类别`的图标最为常用，所以省略了类别，其它类别的图标必须带着类别。
 比如：
 
 - ci-home <i class="ci-home"></i> ci-email <i class="ci-email"></i> 是 `base` 类别的图标。
@@ -83,6 +83,31 @@ export default defineConfig({
 })
 ```
 
+然后在`main.ts` 中添加下面代码，以启用`UnoCSS`的功能 ：
+
+```javascript
+import 'virtual:uno.css'
+```
+
+经过以上配置，就可以正常使用所有的图标了。
+
+:::warning 如何自定义一个图标
+
+当需要使用设计师提供的`SVG图标`时， `@unocss/preset-icons` 插件允许我们快速的自定义图标 ,参考[UnoCSS文档](https://unocss.dev/presets/icons#customization) 。
+
+```javascript{3-6}
+          collections: {
+            ci: () => import('@opentiny/icons/json/icons.json', { assert: { type: 'json' }}).then((i) => i.default),
+            custom: {
+              circle: '<svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50"></circle></svg>',
+              /* ...其它自定义图标... */
+            },
+          }
+```
+
+  :::
+
+
 ## 自定义颜色和大小
 
 单色的`CSS`图标支持通过字体和颜色去自定义图标样式。彩色图标仅支持自定义大小。
@@ -114,11 +139,4 @@ export default defineConfig({
   <i class="ci-svc-live" style="font-size:72px;"></i>
 </div>
 <hr />
-
-## 使用 Svg 资源
-
-图标库还提供了原始的`SVG图标资源`，用户可以直接使用它们。可能有以下的使用场景：
-
-1. 在前端应用项目中直接引用 SVG 为组件。通常需要借助 Svg-Loader 等工具，比如：Vue用户使用`vite-svg-loader`，React用户使用`vite-plugin-svgr`插件工具。
-2. 引用原始 SVG 内容，然后直接渲染到页面上。 
-3. 在`Node`环境中读取文件内容，对文件进行处理后使用。 比如：调用`svgo`进行处理，生成字体文件或svg精灵图等。
+ 
