@@ -59,7 +59,7 @@ import "@opentiny/icons/style/all.css"
 
 ## 按需引用 (推荐)
 
-通过引入 `@unocss/preset-icons` 插件，可以实现按需引用图标，减小构建产物大小，并且可以调整图标前缀，避免与其它图标库冲突。
+`UnoCSS`是目前最好的原子化CSS引擎，它提供有 `@unocss/preset-icons` 图标插件，可以实现按需引用图标，减小构建产物大小。该图标插件完美支持 `Iconify`的生态的图标，所以也支持我们 `IconifyJson` 格式的导出。以 `vite` 工程为例，可以如下配置：
 
 ```javascript{16}
 import { defineConfig } from 'vite'
@@ -86,7 +86,8 @@ export default defineConfig({
 })
 ```
 
-然后在`main.ts` 中添加下面代码，以启用`UnoCSS`的功能 ：
+上面高亮行，引入了图标集，您可以在这里自定义图标引用前缀，比如将`ci`换成你喜欢的其它前缀。
+配置后在`main.ts` 中添加下面代码，以启用`UnoCSS`的功能 ：
 
 ```javascript
 import "virtual:uno.css";
