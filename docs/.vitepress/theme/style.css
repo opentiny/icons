@@ -163,3 +163,15 @@
  color: var(--ui-dark);
 }
  
+/** 旋转动画 */
+.icon-rotating {
+  animation: rotating 2s linear infinite;
+}
+@keyframes rotating {
+  /* 0% {
+    transform: rotateZ(0deg);
+  } */
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

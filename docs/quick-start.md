@@ -10,10 +10,9 @@
 $ npm install @opentiny/icons
 ```
 
-安装后，在`node_modules/@opentiny/icons` 目录中存放着如下的图标库产物。 
+安装后，在`node_modules/@opentiny/icons` 目录中存放着如下的图标库产物。
 其中 `json` 目录中存放了符合[`IconifyJson`](https://iconify.design/docs/types/iconify-json.html)数据格式的产物，它兼容整个[Iconify](https://iconify.design/)生态。
- `style` 目录存放了构建后的样式文件, `svg` 目录存放了原始的设计文件。
-
+`style` 目录存放了构建后的样式文件, `svg` 目录存放了原始的设计文件。
 
 ```
 ./
@@ -90,7 +89,7 @@ export default defineConfig({
 然后在`main.ts` 中添加下面代码，以启用`UnoCSS`的功能 ：
 
 ```javascript
-import 'virtual:uno.css'
+import "virtual:uno.css";
 ```
 
 经过以上配置，就可以正常使用所有的图标了。
@@ -98,7 +97,7 @@ import 'virtual:uno.css'
 :::warning 如何自定义一个图标
 
 当需要使用设计师提供的`SVG图标`时， `@unocss/preset-icons` 插件允许我们快速的自定义图标,比如在上面配置的`collections` 节点中增加如下配置，就可以通过`<i class="custom-circle"></i>`来显示一个图标了。
-参考[UnoCSS文档](https://unocss.dev/presets/icons#customization) 。
+参考[UnoCSS 文档](https://unocss.dev/presets/icons#customization) 。
 
 ```javascript{3-6}
   collections: {
@@ -110,8 +109,7 @@ import 'virtual:uno.css'
   }
 ```
 
-  :::
-
+:::
 
 ## 自定义颜色和大小
 
@@ -145,3 +143,35 @@ import 'virtual:uno.css'
 </div>
 <hr />
  
+ # 动画
+
+图标库中没有任何内置动画工具类，但您可以使用一些成熟的动画库，也可以编写一些常用的动画工具类，比如持续旋转动画：
+
+```css
+.icon-rotating {
+  animation: rotating 2s linear infinite;
+}
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+```
+
+```html
+<i class="ci-setting icon-rotating" style="font-size:24px; color:#000;"></i>
+<i class="ci-retry icon-rotating" style="font-size:24px; color:#000;"></i>
+<i class="ci-refresh icon-rotating" style="font-size:24px; color:#000;"></i>
+<i class="ci-sun icon-rotating" style="font-size:24px; color:#000;"></i>
+```
+
+<div style="display:flex; align-items: center; gap: 24px;">
+   <i class="ci-setting icon-rotating" style="font-size:24px; color:#000;"></i>
+   <i class="ci-retry icon-rotating" style="font-size:24px; color:#000;"></i>
+   <i class="ci-refresh icon-rotating" style="font-size:24px; color:#000;"></i>
+   <i class="ci-sun icon-rotating" style="font-size:24px; color:#000;"></i>
+</div>
+<hr/>
