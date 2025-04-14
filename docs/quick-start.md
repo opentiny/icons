@@ -144,9 +144,9 @@ import "virtual:uno.css";
 </div>
 <hr />
  
- # 动画
+ ## 动画
 
-图标库中没有任何内置动画工具类，但您可以使用一些成熟的动画库，也可以编写一些常用的动画工具类，比如持续旋转动画：
+`OpenTiny Icons`图标库是`CSS`图标方案，所以支持所有的`CSS`动画。图标库中没有任何内置动画工具类，但您可以使用一些成熟的动画库，也可以编写一些常用的动画工具类，比如持续旋转动画：
 
 ```css
 .icon-rotating {
@@ -161,6 +161,8 @@ import "virtual:uno.css";
   }
 }
 ```
+
+将动画工具类名`icon-rotating` 添加到图标上即可。
 
 ```html
 <i class="ci-setting icon-rotating" style="font-size:24px; color:#000;"></i>
