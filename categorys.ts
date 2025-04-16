@@ -472,333 +472,6 @@ export const categorys={
         "order": 99
       }
     ],
-    "2-操作(Operations)": [
-      {
-        "name": "start",
-        "nameCn": "开始",
-        "order": 1
-      },
-      {
-        "name": "unstar",
-        "nameCn": "取消收藏_星星",
-        "order": 10
-      },
-      {
-        "name": "half-star",
-        "nameCn": "半星_半分",
-        "order": 11
-      },
-      {
-        "name": "adjust-x",
-        "nameCn": "横向调整",
-        "order": 12
-      },
-      {
-        "name": "adjust-y",
-        "nameCn": "竖向调整",
-        "order": 13
-      },
-      {
-        "name": "filter",
-        "nameCn": "筛选",
-        "order": 14
-      },
-      {
-        "name": "crop",
-        "nameCn": "剪切_裁剪",
-        "order": 15
-      },
-      {
-        "name": "backward",
-        "nameCn": "返回",
-        "order": 16
-      },
-      {
-        "name": "forward",
-        "nameCn": "前进",
-        "order": 17
-      },
-      {
-        "name": "pause",
-        "nameCn": "暂停",
-        "order": 2
-      },
-      {
-        "name": "zoom-in",
-        "nameCn": "放大",
-        "order": 20
-      },
-      {
-        "name": "zoom-out",
-        "nameCn": "缩小",
-        "order": 21
-      },
-      {
-        "name": "unhide",
-        "nameCn": "取消隐藏",
-        "order": 23
-      },
-      {
-        "name": "hide",
-        "nameCn": "隐藏",
-        "order": 24
-      },
-      {
-        "name": "volume",
-        "nameCn": "音量",
-        "order": 25
-      },
-      {
-        "name": "mute",
-        "nameCn": "静音",
-        "order": 26
-      },
-      {
-        "name": "horizontal-scale",
-        "nameCn": "横向伸缩",
-        "order": 27
-      },
-      {
-        "name": "full",
-        "nameCn": "全屏",
-        "order": 28
-      },
-      {
-        "name": "exit-full",
-        "nameCn": "退出全屏",
-        "order": 29
-      },
-      {
-        "name": "stop",
-        "nameCn": "停止",
-        "order": 3
-      },
-      {
-        "name": "full1",
-        "nameCn": "全屏_最大化",
-        "order": 30
-      },
-      {
-        "name": "exit-full1",
-        "nameCn": "退出全屏_还原",
-        "order": 31
-      },
-      {
-        "name": "fit-canvas",
-        "nameCn": "适应画布",
-        "order": 32
-      },
-      {
-        "name": "minus-square",
-        "nameCn": "减号_收起列表",
-        "order": 33
-      },
-      {
-        "name": "plus-square",
-        "nameCn": "加号_展开列表",
-        "order": 34
-      },
-      {
-        "name": "start1",
-        "nameCn": "播放",
-        "order": 4
-      },
-      {
-        "name": "copy",
-        "nameCn": "复制",
-        "order": 40
-      },
-      {
-        "name": "copy1",
-        "nameCn": "复制",
-        "order": 41
-      },
-      {
-        "name": "type",
-        "nameCn": "类型",
-        "order": 42
-      },
-      {
-        "name": "group",
-        "nameCn": "群组_复制",
-        "order": 43
-      },
-      {
-        "name": "list",
-        "nameCn": "列表_清单",
-        "order": 44
-      },
-      {
-        "name": "custom",
-        "nameCn": "均衡器_配置",
-        "order": 45
-      },
-      {
-        "name": "config-x",
-        "nameCn": "配置",
-        "order": 46
-      },
-      {
-        "name": "config-y",
-        "nameCn": "配置",
-        "order": 47
-      },
-      {
-        "name": "switch",
-        "nameCn": "切换方式",
-        "order": 48
-      },
-      {
-        "name": "logout",
-        "nameCn": "退出",
-        "order": 49
-      },
-      {
-        "name": "pause1",
-        "nameCn": "暂停",
-        "order": 5
-      },
-      {
-        "name": "login",
-        "nameCn": "登录",
-        "order": 50
-      },
-      {
-        "name": "logout1",
-        "nameCn": "退出",
-        "order": 51
-      },
-      {
-        "name": "leave",
-        "nameCn": "离开",
-        "order": 52
-      },
-      {
-        "name": "desc",
-        "nameCn": "降序",
-        "order": 6
-      },
-      {
-        "name": "upload",
-        "nameCn": "上传",
-        "order": 60
-      },
-      {
-        "name": "download",
-        "nameCn": "下载",
-        "order": 61
-      },
-      {
-        "name": "two-way-load",
-        "nameCn": "上传下载",
-        "order": 62
-      },
-      {
-        "name": "upload-cloud",
-        "nameCn": "上传到云",
-        "order": 63
-      },
-      {
-        "name": "choose",
-        "nameCn": "选中",
-        "order": 64
-      },
-      {
-        "name": "delete",
-        "nameCn": "删除",
-        "order": 65
-      },
-      {
-        "name": "cut",
-        "nameCn": "剪切_剪刀",
-        "order": 66
-      },
-      {
-        "name": "asc",
-        "nameCn": "升序",
-        "order": 7
-      },
-      {
-        "name": "shutdown",
-        "nameCn": "关机",
-        "order": 70
-      },
-      {
-        "name": "shutdown1",
-        "nameCn": "关机",
-        "order": 71
-      },
-      {
-        "name": "restart",
-        "nameCn": "重启",
-        "order": 72
-      },
-      {
-        "name": "retry",
-        "nameCn": "重试",
-        "order": 73
-      },
-      {
-        "name": "refresh",
-        "nameCn": "刷新",
-        "order": 74
-      },
-      {
-        "name": "reset-pwd",
-        "nameCn": "重置密码",
-        "order": 75
-      },
-      {
-        "name": "pause-refresh",
-        "nameCn": "暂停刷新",
-        "order": 76
-      },
-      {
-        "name": "no-setting",
-        "nameCn": "屏蔽设置_禁止配置",
-        "order": 77
-      },
-      {
-        "name": "update",
-        "nameCn": "升级",
-        "order": 78
-      },
-      {
-        "name": "lock-ring",
-        "nameCn": "锁",
-        "order": 79
-      },
-      {
-        "name": "sort",
-        "nameCn": "排序",
-        "order": 8
-      },
-      {
-        "name": "unlock",
-        "nameCn": "解锁",
-        "order": 80
-      },
-      {
-        "name": "lock",
-        "nameCn": "锁定",
-        "order": 81
-      },
-      {
-        "name": "border",
-        "nameCn": "边界_规则",
-        "order": 82
-      },
-      {
-        "name": "dash-border",
-        "nameCn": "隐藏边界_规则",
-        "order": 83
-      },
-      {
-        "name": "star",
-        "nameCn": "收藏_星星_评分",
-        "order": 9
-      }
-    ],
     "3-文档_编辑器(Document & Editor)": [
       {
         "name": "folder-open1",
@@ -1423,6 +1096,333 @@ export const categorys={
         "order": 93
       }
     ],
+    "2-操作(Operations)": [
+      {
+        "name": "start",
+        "nameCn": "开始",
+        "order": 1
+      },
+      {
+        "name": "unstar",
+        "nameCn": "取消收藏_星星",
+        "order": 10
+      },
+      {
+        "name": "half-star",
+        "nameCn": "半星_半分",
+        "order": 11
+      },
+      {
+        "name": "adjust-x",
+        "nameCn": "横向调整",
+        "order": 12
+      },
+      {
+        "name": "adjust-y",
+        "nameCn": "竖向调整",
+        "order": 13
+      },
+      {
+        "name": "filter",
+        "nameCn": "筛选",
+        "order": 14
+      },
+      {
+        "name": "crop",
+        "nameCn": "剪切_裁剪",
+        "order": 15
+      },
+      {
+        "name": "backward",
+        "nameCn": "返回",
+        "order": 16
+      },
+      {
+        "name": "forward",
+        "nameCn": "前进",
+        "order": 17
+      },
+      {
+        "name": "pause",
+        "nameCn": "暂停",
+        "order": 2
+      },
+      {
+        "name": "zoom-in",
+        "nameCn": "放大",
+        "order": 20
+      },
+      {
+        "name": "zoom-out",
+        "nameCn": "缩小",
+        "order": 21
+      },
+      {
+        "name": "unhide",
+        "nameCn": "取消隐藏",
+        "order": 23
+      },
+      {
+        "name": "hide",
+        "nameCn": "隐藏",
+        "order": 24
+      },
+      {
+        "name": "volume",
+        "nameCn": "音量",
+        "order": 25
+      },
+      {
+        "name": "mute",
+        "nameCn": "静音",
+        "order": 26
+      },
+      {
+        "name": "horizontal-scale",
+        "nameCn": "横向伸缩",
+        "order": 27
+      },
+      {
+        "name": "full",
+        "nameCn": "全屏",
+        "order": 28
+      },
+      {
+        "name": "exit-full",
+        "nameCn": "退出全屏",
+        "order": 29
+      },
+      {
+        "name": "stop",
+        "nameCn": "停止",
+        "order": 3
+      },
+      {
+        "name": "full1",
+        "nameCn": "全屏_最大化",
+        "order": 30
+      },
+      {
+        "name": "exit-full1",
+        "nameCn": "退出全屏_还原",
+        "order": 31
+      },
+      {
+        "name": "fit-canvas",
+        "nameCn": "适应画布",
+        "order": 32
+      },
+      {
+        "name": "minus-square",
+        "nameCn": "减号_收起列表",
+        "order": 33
+      },
+      {
+        "name": "plus-square",
+        "nameCn": "加号_展开列表",
+        "order": 34
+      },
+      {
+        "name": "start1",
+        "nameCn": "播放",
+        "order": 4
+      },
+      {
+        "name": "copy",
+        "nameCn": "复制",
+        "order": 40
+      },
+      {
+        "name": "copy1",
+        "nameCn": "复制",
+        "order": 41
+      },
+      {
+        "name": "type",
+        "nameCn": "类型",
+        "order": 42
+      },
+      {
+        "name": "group",
+        "nameCn": "群组_复制",
+        "order": 43
+      },
+      {
+        "name": "list",
+        "nameCn": "列表_清单",
+        "order": 44
+      },
+      {
+        "name": "custom",
+        "nameCn": "均衡器_配置",
+        "order": 45
+      },
+      {
+        "name": "config-x",
+        "nameCn": "配置",
+        "order": 46
+      },
+      {
+        "name": "config-y",
+        "nameCn": "配置",
+        "order": 47
+      },
+      {
+        "name": "switch",
+        "nameCn": "切换方式",
+        "order": 48
+      },
+      {
+        "name": "logout",
+        "nameCn": "退出",
+        "order": 49
+      },
+      {
+        "name": "pause1",
+        "nameCn": "暂停",
+        "order": 5
+      },
+      {
+        "name": "login",
+        "nameCn": "登录",
+        "order": 50
+      },
+      {
+        "name": "logout1",
+        "nameCn": "退出",
+        "order": 51
+      },
+      {
+        "name": "leave",
+        "nameCn": "离开",
+        "order": 52
+      },
+      {
+        "name": "desc",
+        "nameCn": "降序",
+        "order": 6
+      },
+      {
+        "name": "upload",
+        "nameCn": "上传",
+        "order": 60
+      },
+      {
+        "name": "download",
+        "nameCn": "下载",
+        "order": 61
+      },
+      {
+        "name": "two-way-load",
+        "nameCn": "上传下载",
+        "order": 62
+      },
+      {
+        "name": "upload-cloud",
+        "nameCn": "上传到云",
+        "order": 63
+      },
+      {
+        "name": "choose",
+        "nameCn": "选中",
+        "order": 64
+      },
+      {
+        "name": "delete",
+        "nameCn": "删除",
+        "order": 65
+      },
+      {
+        "name": "cut",
+        "nameCn": "剪切_剪刀",
+        "order": 66
+      },
+      {
+        "name": "asc",
+        "nameCn": "升序",
+        "order": 7
+      },
+      {
+        "name": "shutdown",
+        "nameCn": "关机",
+        "order": 70
+      },
+      {
+        "name": "shutdown1",
+        "nameCn": "关机",
+        "order": 71
+      },
+      {
+        "name": "restart",
+        "nameCn": "重启",
+        "order": 72
+      },
+      {
+        "name": "retry",
+        "nameCn": "重试",
+        "order": 73
+      },
+      {
+        "name": "refresh",
+        "nameCn": "刷新",
+        "order": 74
+      },
+      {
+        "name": "reset-pwd",
+        "nameCn": "重置密码",
+        "order": 75
+      },
+      {
+        "name": "pause-refresh",
+        "nameCn": "暂停刷新",
+        "order": 76
+      },
+      {
+        "name": "no-setting",
+        "nameCn": "屏蔽设置_禁止配置",
+        "order": 77
+      },
+      {
+        "name": "update",
+        "nameCn": "升级",
+        "order": 78
+      },
+      {
+        "name": "lock-ring",
+        "nameCn": "锁",
+        "order": 79
+      },
+      {
+        "name": "sort",
+        "nameCn": "排序",
+        "order": 8
+      },
+      {
+        "name": "unlock",
+        "nameCn": "解锁",
+        "order": 80
+      },
+      {
+        "name": "lock",
+        "nameCn": "锁定",
+        "order": 81
+      },
+      {
+        "name": "border",
+        "nameCn": "边界_规则",
+        "order": 82
+      },
+      {
+        "name": "dash-border",
+        "nameCn": "隐藏边界_规则",
+        "order": 83
+      },
+      {
+        "name": "star",
+        "nameCn": "收藏_星星_评分",
+        "order": 9
+      }
+    ],
     "5-用户_权限(User & Auth)": [
       {
         "name": "user",
@@ -1620,119 +1620,6 @@ export const categorys={
       }
     ]
   },
-  "stat": {
-    "1-空数据": [
-      {
-        "name": "stat-no-data",
-        "nameCn": "暂无数据",
-        "order": 1
-      },
-      {
-        "name": "stat-no-schedule",
-        "nameCn": "暂无新日程",
-        "order": 2
-      },
-      {
-        "name": "stat-empty-file",
-        "nameCn": "文件为空",
-        "order": 3
-      },
-      {
-        "name": "stat-no-search",
-        "nameCn": "暂无搜索结果",
-        "order": 4
-      }
-    ],
-    "2-请求状态": [
-      {
-        "name": "stat-401",
-        "nameCn": "401未认证",
-        "order": 1
-      },
-      {
-        "name": "stat-404",
-        "nameCn": "404未发现页面",
-        "order": 2
-      },
-      {
-        "name": "stat-415",
-        "nameCn": "415请求被拒绝",
-        "order": 3
-      },
-      {
-        "name": "stat-502",
-        "nameCn": "502不匹配",
-        "order": 4
-      }
-    ],
-    "3-应用权限&应用状态": [
-      {
-        "name": "stat-no-access",
-        "nameCn": "没有访问权限",
-        "order": 1
-      },
-      {
-        "name": "stat-service-not-opened",
-        "nameCn": "服务未开通",
-        "order": 10
-      },
-      {
-        "name": "stat-running-well",
-        "nameCn": "运行状态良好",
-        "order": 11
-      },
-      {
-        "name": "stat-security-extension",
-        "nameCn": "域名系统安全扩展",
-        "order": 12
-      },
-      {
-        "name": "stat-quick-skin-change",
-        "nameCn": "一键换肤",
-        "order": 13
-      },
-      {
-        "name": "stat-page-failure",
-        "nameCn": "页面失效",
-        "order": 2
-      },
-      {
-        "name": "stat-load-failure",
-        "nameCn": "加载失败",
-        "order": 3
-      },
-      {
-        "name": "stat-region-not-supported",
-        "nameCn": "区域不支持",
-        "order": 4
-      },
-      {
-        "name": "stat-frozen",
-        "nameCn": "冻结",
-        "order": 5
-      },
-      {
-        "name": "stat-coming-soon",
-        "nameCn": "即将上线",
-        "order": 6
-      },
-      {
-        "name": "stat-system-busy",
-        "nameCn": "系统繁忙",
-        "order": 7
-      },
-      {
-        "name": "stat-under-maintenance",
-        "nameCn": "维护中",
-        "order": 8
-      },
-      {
-        "name": "stat-page-migration",
-        "nameCn": "页面迁移",
-        "order": 9
-      }
-    ]
-  },
   "svc": {
     "1-计算": [
       {
@@ -1833,28 +1720,6 @@ export const categorys={
         "order": 7
       }
     ],
-    "11-CDN与智能边缘": [
-      {
-        "name": "svc-cdn",
-        "nameCn": "内容分发网络",
-        "order": 1
-      },
-      {
-        "name": "svc-wsa",
-        "nameCn": "全站加速",
-        "order": 2
-      },
-      {
-        "name": "svc-iec",
-        "nameCn": "智能边缘云",
-        "order": 3
-      },
-      {
-        "name": "svc-cloudpond",
-        "nameCn": "智能边缘小站",
-        "order": 4
-      }
-    ],
     "12-管理与监督": [
       {
         "name": "svc-oneaccess",
@@ -1935,6 +1800,28 @@ export const categorys={
         "name": "svc-iic",
         "nameCn": "工业互联网联盟",
         "order": 9
+      }
+    ],
+    "11-CDN与智能边缘": [
+      {
+        "name": "svc-cdn",
+        "nameCn": "内容分发网络",
+        "order": 1
+      },
+      {
+        "name": "svc-wsa",
+        "nameCn": "全站加速",
+        "order": 2
+      },
+      {
+        "name": "svc-iec",
+        "nameCn": "智能边缘云",
+        "order": 3
+      },
+      {
+        "name": "svc-cloudpond",
+        "nameCn": "智能边缘小站",
+        "order": 4
       }
     ],
     "13-开发与运维": [
@@ -2581,93 +2468,6 @@ export const categorys={
         "order": 9
       }
     ],
-    "4-数据库": [
-      {
-        "name": "svc-rds-for-mysql",
-        "nameCn": "云数据库",
-        "order": 1
-      },
-      {
-        "name": "svc-rds-for-postgresql",
-        "nameCn": "云数据库",
-        "order": 10
-      },
-      {
-        "name": "svc-redis",
-        "nameCn": "云数据库geminidb",
-        "order": 11
-      },
-      {
-        "name": "svc-drs",
-        "nameCn": "数据复制服务",
-        "order": 12
-      },
-      {
-        "name": "svc-rds-for-sqlserver",
-        "nameCn": "云数据库",
-        "order": 13
-      },
-      {
-        "name": "svc-das",
-        "nameCn": "数据管理服务",
-        "order": 14
-      },
-      {
-        "name": "svc-ugo",
-        "nameCn": "数据库和应用迁移",
-        "order": 15
-      },
-      {
-        "name": "svc-rds-for-mariadb",
-        "nameCn": "云数据库",
-        "order": 16
-      },
-      {
-        "name": "svc-geminidb",
-        "nameCn": "云数据库",
-        "order": 17
-      },
-      {
-        "name": "svc-taurusdb",
-        "nameCn": "云数据库",
-        "order": 2
-      },
-      {
-        "name": "svc-gaussdb",
-        "nameCn": "云数据库",
-        "order": 3
-      },
-      {
-        "name": "svc-dds",
-        "nameCn": "文档数据库服务",
-        "order": 4
-      },
-      {
-        "name": "svc-geminidb-cassandra",
-        "nameCn": "云数据库",
-        "order": 5
-      },
-      {
-        "name": "svc-mongo",
-        "nameCn": "云数据库geminidb",
-        "order": 6
-      },
-      {
-        "name": "svc-geminidb-lnflux",
-        "nameCn": "云数据库",
-        "order": 7
-      },
-      {
-        "name": "svc-ddm",
-        "nameCn": "分布式数据库中间件",
-        "order": 8
-      },
-      {
-        "name": "svc-rds",
-        "nameCn": "关系数据库",
-        "order": 9
-      }
-    ],
     "5-人工智能": [
       {
         "name": "svc-pangullm",
@@ -2935,6 +2735,93 @@ export const categorys={
         "order": 9
       }
     ],
+    "4-数据库": [
+      {
+        "name": "svc-rds-for-mysql",
+        "nameCn": "云数据库",
+        "order": 1
+      },
+      {
+        "name": "svc-rds-for-postgresql",
+        "nameCn": "云数据库",
+        "order": 10
+      },
+      {
+        "name": "svc-redis",
+        "nameCn": "云数据库geminidb",
+        "order": 11
+      },
+      {
+        "name": "svc-drs",
+        "nameCn": "数据复制服务",
+        "order": 12
+      },
+      {
+        "name": "svc-rds-for-sqlserver",
+        "nameCn": "云数据库",
+        "order": 13
+      },
+      {
+        "name": "svc-das",
+        "nameCn": "数据管理服务",
+        "order": 14
+      },
+      {
+        "name": "svc-ugo",
+        "nameCn": "数据库和应用迁移",
+        "order": 15
+      },
+      {
+        "name": "svc-rds-for-mariadb",
+        "nameCn": "云数据库",
+        "order": 16
+      },
+      {
+        "name": "svc-geminidb",
+        "nameCn": "云数据库",
+        "order": 17
+      },
+      {
+        "name": "svc-taurusdb",
+        "nameCn": "云数据库",
+        "order": 2
+      },
+      {
+        "name": "svc-gaussdb",
+        "nameCn": "云数据库",
+        "order": 3
+      },
+      {
+        "name": "svc-dds",
+        "nameCn": "文档数据库服务",
+        "order": 4
+      },
+      {
+        "name": "svc-geminidb-cassandra",
+        "nameCn": "云数据库",
+        "order": 5
+      },
+      {
+        "name": "svc-mongo",
+        "nameCn": "云数据库geminidb",
+        "order": 6
+      },
+      {
+        "name": "svc-geminidb-lnflux",
+        "nameCn": "云数据库",
+        "order": 7
+      },
+      {
+        "name": "svc-ddm",
+        "nameCn": "分布式数据库中间件",
+        "order": 8
+      },
+      {
+        "name": "svc-rds",
+        "nameCn": "关系数据库",
+        "order": 9
+      }
+    ],
     "6-大数据": [
       {
         "name": "svc-mrs",
@@ -3190,6 +3077,119 @@ export const categorys={
       {
         "name": "svc-anti-ddos",
         "nameCn": "antiddos流量清洗",
+        "order": 9
+      }
+    ]
+  },
+  "stat": {
+    "1-空数据": [
+      {
+        "name": "stat-no-data",
+        "nameCn": "暂无数据",
+        "order": 1
+      },
+      {
+        "name": "stat-no-schedule",
+        "nameCn": "暂无新日程",
+        "order": 2
+      },
+      {
+        "name": "stat-empty-file",
+        "nameCn": "文件为空",
+        "order": 3
+      },
+      {
+        "name": "stat-no-search",
+        "nameCn": "暂无搜索结果",
+        "order": 4
+      }
+    ],
+    "2-请求状态": [
+      {
+        "name": "stat-401",
+        "nameCn": "401未认证",
+        "order": 1
+      },
+      {
+        "name": "stat-404",
+        "nameCn": "404未发现页面",
+        "order": 2
+      },
+      {
+        "name": "stat-415",
+        "nameCn": "415请求被拒绝",
+        "order": 3
+      },
+      {
+        "name": "stat-502",
+        "nameCn": "502不匹配",
+        "order": 4
+      }
+    ],
+    "3-应用权限&应用状态": [
+      {
+        "name": "stat-no-access",
+        "nameCn": "没有访问权限",
+        "order": 1
+      },
+      {
+        "name": "stat-service-not-opened",
+        "nameCn": "服务未开通",
+        "order": 10
+      },
+      {
+        "name": "stat-running-well",
+        "nameCn": "运行状态良好",
+        "order": 11
+      },
+      {
+        "name": "stat-security-extension",
+        "nameCn": "域名系统安全扩展",
+        "order": 12
+      },
+      {
+        "name": "stat-quick-skin-change",
+        "nameCn": "一键换肤",
+        "order": 13
+      },
+      {
+        "name": "stat-page-failure",
+        "nameCn": "页面失效",
+        "order": 2
+      },
+      {
+        "name": "stat-load-failure",
+        "nameCn": "加载失败",
+        "order": 3
+      },
+      {
+        "name": "stat-region-not-supported",
+        "nameCn": "区域不支持",
+        "order": 4
+      },
+      {
+        "name": "stat-frozen",
+        "nameCn": "冻结",
+        "order": 5
+      },
+      {
+        "name": "stat-coming-soon",
+        "nameCn": "即将上线",
+        "order": 6
+      },
+      {
+        "name": "stat-system-busy",
+        "nameCn": "系统繁忙",
+        "order": 7
+      },
+      {
+        "name": "stat-under-maintenance",
+        "nameCn": "维护中",
+        "order": 8
+      },
+      {
+        "name": "stat-page-migration",
+        "nameCn": "页面迁移",
         "order": 9
       }
     ]

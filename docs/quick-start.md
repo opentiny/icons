@@ -168,13 +168,13 @@ import "virtual:uno.css";
 <i class="ci-setting icon-rotating" style="font-size:24px; color:#000;"></i>
 <i class="ci-retry icon-rotating" style="font-size:24px; color:#000;"></i>
 <i class="ci-refresh icon-rotating" style="font-size:24px; color:#000;"></i>
-<i class="ci-sun icon-rotating" style="font-size:24px; color:#000;"></i>
+<i class="ci-loading icon-rotating" style="font-size:24px; color:#000;"></i>
 ```
 
 <div style="display:flex; align-items: center; gap: 24px;">
    <i class="ci-setting icon-rotating" style="font-size:24px; color:#000;"></i>
    <i class="ci-retry icon-rotating" style="font-size:24px; color:#000;"></i>
    <i class="ci-refresh icon-rotating" style="font-size:24px; color:#000;"></i>
-   <i class="ci-sun icon-rotating" style="font-size:24px; color:#000;"></i>
+   <i class="ci-loading icon-rotating" style="font-size:24px; color:#000;"></i>
 </div>
 <hr/>
