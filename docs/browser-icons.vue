@@ -12,25 +12,12 @@
       </select>
     </div>
     <div>
-      <input
-        v-model="filterStr"
-        type="text"
-        is="ui-input"
-        placeholder="搜索图标"
-      />
+      <input v-model="filterStr" type="text" is="ui-input" placeholder="搜索图标" />
     </div>
   </div>
-  <div
-    id="list"
-    :style="{ '--icon-color': `${color}` }"
-    @click="copyIcon($event)"
-  >
-    <div
-      v-for="(groupIcons, groupName) in displayGroups"
-      :key="groupName"
-      class="icons-group"
-    >
-      <h2 :id="groupName" v-show="groupIcons.length>0" class="icons-group-title" title="图标数">
+  <div id="list" :style="{ '--icon-color': `${color}` }" @click="copyIcon($event)">
+    <div v-for="(groupIcons, groupName) in displayGroups" :key="groupName" class="icons-group">
+      <h2 :id="groupName" v-show="groupIcons.length > 0" class="icons-group-title" title="图标数">
         <span>{{ groupName }}</span>
         <sup class="icon-counts ignore-header"> {{ groupIcons.length }}</sup>
       </h2>
@@ -43,76 +30,72 @@
   </div>
 
   <div class="tip">
-    {{ copyText + " 复制成功" }}
+    {{ copyText + ' 复制成功' }}
   </div>
 </template>
 
 <script setup>
-import { categorys } from "../categorys.ts";
-import { ref, computed, nextTick } from "vue";
+import { categorys } from '../categorys.ts'
+import { ref, computed, nextTick } from 'vue'
 
-const props = defineProps(["cat"]);
+const props = defineProps(['cat'])
 
-const color = ref("#575757");
-const copyType = ref("all");
-const filterStr = ref("");
+const color = ref('#575757')
+const copyType = ref('all')
+const filterStr = ref('')
 
 const clsPrefix = computed(() => {
-  return props.cat === "base" ? "ci-" : "ci-" + props.cat + "-";
-});
+  return props.cat === 'base' ? 'ci-' : 'ci-' + props.cat + '-'
+})
 
 const displayGroups = computed(() => {
-  const icons = categorys[props.cat];
+  const icons = categorys[props.cat]
 
   const sortedGroups = Object.keys(icons)
     .sort((groupName1, groupName2) => {
-      const num1 = parseInt(groupName1.split("-")[0]);
-      const num2 = parseInt(groupName2.split("-")[0]);
-      return num1 > num2 ? 1 : -1;
+      const num1 = parseInt(groupName1.split('-')[0])
+      const num2 = parseInt(groupName2.split('-')[0])
+      return num1 > num2 ? 1 : -1
     })
     .map((groupName) => {
-      let groupIcons = icons[groupName];
+      let groupIcons = icons[groupName]
       // 过滤图标
       if (filterStr.value) {
         groupIcons = groupIcons.filter((icon) => {
-          return (
-            icon.name.includes(filterStr.value) ||
-            icon.nameCn.includes(filterStr.value)
-          );
-        });
+          return icon.name.includes(filterStr.value) || icon.nameCn.includes(filterStr.value)
+        })
       }
       // 过滤后排序
-      groupIcons.sort((g1, g2) => (g1.order > g2.order ? 1 : -1));
+      groupIcons.sort((g1, g2) => (g1.order > g2.order ? 1 : -1))
 
-      return [groupName, groupIcons];
-    });
+      return [groupName, groupIcons]
+    })
 
-  return Object.fromEntries(sortedGroups);
-});
+  return Object.fromEntries(sortedGroups)
+})
 
-const copyText = ref("");
-let rmTimer = 0;
+const copyText = ref('')
+let rmTimer = 0
 
 const copyIcon = (ev) => {
-  const target = ev.target;
-  const name = target.dataset.name;
+  const target = ev.target
+  const name = target.dataset.name
   if (name) {
-    const cls = "ci-" + name;
-    const tag = `<i class="${cls}"></i>`;
-    copyText.value = copyType.value === "all" ? tag : cls;
+    const cls = 'ci-' + name
+    const tag = `<i class="${cls}"></i>`
+    copyText.value = copyType.value === 'all' ? tag : cls
 
-    const tip = document.querySelector(".tip");
-    tip.classList.add("active");
+    const tip = document.querySelector('.tip')
+    tip.classList.add('active')
 
-    rmTimer && clearTimeout(rmTimer);
+    rmTimer && clearTimeout(rmTimer)
     rmTimer = setTimeout(() => {
-      tip.classList.remove("active");
-    }, 3000);
+      tip.classList.remove('active')
+    }, 3000)
 
-    navigator.clipboard.writeText(copyText.value);
+    navigator.clipboard.writeText(copyText.value)
   }
-};
-
+}
 </script>
 
 <style>
@@ -214,8 +197,8 @@ input {
 .tip.active {
   display: block;
 }
-.dark .tip{
+.dark .tip {
   background-color: #2a362e;
-  color:#98989f;
+  color: #98989f;
 }
 </style>

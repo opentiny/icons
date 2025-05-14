@@ -1,4 +1,29 @@
-import{p as a,c as l,o as e,ah as p}from"./chunks/framework.Dwe2Uyii.js";import"./chunks/theme.-dLHjZVU.js";a();const n=typeof window<"u",t=a(n?location.hash:"");n&&window.addEventListener("hashchange",()=>{t.value=location.hash});if(typeof window<"u"){var i={get passive(){}};window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}const r=JSON.parse('{"title":"快速上手","description":"","frontmatter":{},"headers":[],"relativePath":"quick-start.md","filePath":"quick-start.md"}'),h={name:"quick-start.md"},E=Object.assign(h,{setup(k){return(c,s)=>(e(),l("div",null,s[0]||(s[0]=[p(`<h1 id="快速上手" tabindex="-1">快速上手 <a class="header-anchor" href="#快速上手" aria-label="Permalink to &quot;快速上手&quot;">​</a></h1><p><code>OpenTiny Icons</code>图标库是<code>CSS</code>图标方案，所以支持所有前端框架，也支持<code>UnoCSS</code>的图标插件使用场景。</p><h2 id="安装图标库" tabindex="-1">安装图标库 <a class="header-anchor" href="#安装图标库" aria-label="Permalink to &quot;安装图标库&quot;">​</a></h2><p>本节中，我们将介绍如何安装图标库依赖以及图标库的内容。</p><div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> @opentiny/icons</span></span></code></pre></div><p>安装后，在<code>node_modules/@opentiny/icons</code> 目录中，可以观察到以下内容</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>icons/</span></span>
+import { p as a, c as l, o as e, ah as p } from './chunks/framework.Dwe2Uyii.js'
+import './chunks/theme.-dLHjZVU.js'
+a()
+const n = typeof window < 'u',
+  t = a(n ? location.hash : '')
+n &&
+  window.addEventListener('hashchange', () => {
+    t.value = location.hash
+  })
+if (typeof window < 'u') {
+  var i = { get passive() {} }
+  window.addEventListener('testPassive', null, i), window.removeEventListener('testPassive', null, i)
+}
+const r = JSON.parse('{"title":"快速上手","description":"","frontmatter":{},"headers":[],"relativePath":"quick-start.md","filePath":"quick-start.md"}'),
+  h = { name: 'quick-start.md' },
+  E = Object.assign(h, {
+    setup(k) {
+      return (c, s) => (
+        e(),
+        l(
+          'div',
+          null,
+          s[0] ||
+            (s[0] = [
+              p(
+                `<h1 id="快速上手" tabindex="-1">快速上手 <a class="header-anchor" href="#快速上手" aria-label="Permalink to &quot;快速上手&quot;">​</a></h1><p><code>OpenTiny Icons</code>图标库是<code>CSS</code>图标方案，所以支持所有前端框架，也支持<code>UnoCSS</code>的图标插件使用场景。</p><h2 id="安装图标库" tabindex="-1">安装图标库 <a class="header-anchor" href="#安装图标库" aria-label="Permalink to &quot;安装图标库&quot;">​</a></h2><p>本节中，我们将介绍如何安装图标库依赖以及图标库的内容。</p><div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">$</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> @opentiny/icons</span></span></code></pre></div><p>安装后，在<code>node_modules/@opentiny/icons</code> 目录中，可以观察到以下内容</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>icons/</span></span>
 <span class="line"><span>|─json</span></span>
 <span class="line"><span>|  └─ icons.json</span></span>
 <span class="line"><span>|─style</span></span>
@@ -27,4 +52,12 @@ import{p as a,c as l,o as e,ah as p}from"./chunks/framework.Dwe2Uyii.js";import"
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">      ]</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    })</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  ]</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span></code></pre></div><div class="tip custom-block"><p class="custom-block-title">实用技巧</p><p>修改<code>collections</code>中的键值，可以迅速调整图标前缀，避免与其它图标库冲突！</p></div>`,16)])))}});export{r as __pageData,E as default};
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span></code></pre></div><div class="tip custom-block"><p class="custom-block-title">实用技巧</p><p>修改<code>collections</code>中的键值，可以迅速调整图标前缀，避免与其它图标库冲突！</p></div>`,
+                16
+              )
+            ])
+        )
+      )
+    }
+  })
+export { r as __pageData, E as default }
